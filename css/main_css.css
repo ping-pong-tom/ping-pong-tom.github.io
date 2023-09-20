@@ -49,5 +49,9 @@ a {
   line-height: 60px;
 }  
 
+.main_pong {
+  position: relative;
+  top: -5px;
+}
 
 
