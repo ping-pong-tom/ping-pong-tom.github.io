@@ -5,7 +5,20 @@
   color: black !important;
 }
 
+.main_logo {
+  width: 120px;
+  height: 100%;
+  background-color: red;
+}
+
+.main_nav {
+  width: 120px;
+  height: 100%;
+  background-color: blue;
+}
+
 body {
 background-color: #2F2928;
 color: #F3F1F1 !important;
 }
+
