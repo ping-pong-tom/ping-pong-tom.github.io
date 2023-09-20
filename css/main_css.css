@@ -22,10 +22,27 @@ a {
 }
 
 .main_nav {
-  width: 120px;
+  width: fit-content;
   height: 100%;
   background-color: white;
 }
+
+/* no bullet points */
+.main_nav ul {
+  list-style:none;
+}  
+
+/* next to each other */
+.main_nav ul li {
+  display: inline;
+  float: left;
+
+}  
+
+/* link can be clicked in between list objects */
+.main_nav ul li a{
+  padding: 0 10px 0 10px;
+}  
 
 
 
