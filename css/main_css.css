@@ -32,6 +32,7 @@ a {
 /* no bullet points */
 .main_nav ul {
   list-style: none;
+  margin-left: 30px;
 }  
 
 /* next to each other */
@@ -44,7 +45,7 @@ a {
 /* link can be clicked in between list objects */
 .main_nav ul li a{
   padding: 0 10px 0 10px;
-  font-family: Arial
+  font-family: Arial;
   line-height=60px;
 }  
 
