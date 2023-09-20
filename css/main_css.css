@@ -32,7 +32,6 @@ a {
 /* no bullet points */
 .main_nav ul {
   list-style: none;
-  margin-left: 30px;
 }  
 
 /* next to each other */
