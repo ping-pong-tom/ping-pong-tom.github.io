@@ -21,7 +21,9 @@ a {
   height: 100%;
   background-color: white;
   display: flex;
-  margin-bottom: 15px;
+  position: relative;
+  top:-10px;
+
 }
 
 .main_nav {
