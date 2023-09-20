@@ -3,6 +3,7 @@
   height: 60px;
   background-color: white;
   color: black !important;
+  display: flex;
 }
 
 .main_logo {
