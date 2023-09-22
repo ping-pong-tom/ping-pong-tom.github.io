@@ -11,12 +11,10 @@
     
 <script>
 const options = {
-  method: 'POST',
-  url: 'https://pragma.archivelab.org/',
-  headers: {
-    accept: 'application/json',
-    'content-type': 'application/x-www-form-urlencoded'
-  }
+  method: 'GET',
+  url: 'https://archive.org/wayback/available',
+  params: {url: 'cnn.com'},
+  headers: {accept: 'application/json'}
 };
 
 axios
