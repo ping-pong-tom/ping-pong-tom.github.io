@@ -8,9 +8,27 @@
   <link rel="stylesheet" href="css/main_css.css">
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    
-<script>
 
+<script>
+  /* CBC SCRIPT */
+  const cbc_options = {
+  method: 'GET',
+  url: 'https://www.cbc.ca/webfeed/rss/rss-topstories',
+  headers: {accept: 'application/json'}
+};
+
+  axios
+  .request(cbc_options)
+  .then(function (response) {
+    console.log(response.data);
+  })
+  .catch(function (error) {
+    console.error(error);
+  }); 
+</script> 
+  
+<script>
+/* ARCHIVE SCRIPT */
 const encodedParams = new URLSearchParams();
 encodedParams.set('url', 'cnn.com');
   
