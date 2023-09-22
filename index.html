@@ -11,9 +11,9 @@
 <body>
   <header class="main_bar">
     <div class="main_logo"> 
-      <img src="imgs/pingpong.gif" alt="main_pong">
          <nav class="main_nav">  
       <ul>
+        <li> <img src="imgs/pingpong.gif" alt="main_pong">
         <li> <a href="/index.html"> HOME </a> </li>
         <li> <a href="/html/thetable.html"> THE TABLE </a> </li>
         <li> <a href=#> WRITTEN PIECES </a> </li>
@@ -22,6 +22,27 @@
     
     </div>
 
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    import axios from 'axios';
+
+const options = {
+  method: 'POST',
+  url: 'https://pragma.archivelab.org/',
+  headers: {
+    accept: 'application/json',
+    'content-type': 'application/x-www-form-urlencoded'
+  }
+};
+
+axios
+  .request(options)
+  .then(function (response) {
+    console.log(response.data);
+  })
+  .catch(function (error) {
+    console.error(error);
+  });
 
     
   </header>
